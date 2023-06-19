@@ -196,74 +196,45 @@ button:hover {
 /* MEDIA QUERIES */
 /* for larger screen sizes from 1400px wide and down */
 @media screen and (max-width: 1400px) {
-    .flexbox {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 200%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin: 5px;
+    }
+
+    .navbar a {
+        padding: 5px;
+    }
+
+    .welcome-content {
+        margin: 40px 0;
+    }
+
+    .center-image {
         width: 80%;
+        margin: 40px auto;
     }
 
-    .flex-gallery {
-        padding: 5px;
-    }
-
-    .image-item {
-        padding: 5px;
-    }
-}
-
-/* for large to medium screen sizes from 1110px wide and down */
-@media screen and (max-width: 1110px) {
-    .flexbox {
-        width: 100%;
-
-    }
-
-    .flex-gallery {
-        padding: 5px;
-    }
-
-    .image-item {
-        padding: 5px;
-    }
-}
-
-/* for medium screen sizes from 950px wide and down */
-@media screen and (max-width: 950px) {
-    .logo {
-        font-size: 500%;
-    }
-
-    .logo,
-    .navbar {
-        text-align: center;
-        float: none;
-        line-height: 80px;
-        clear: both;
-    }
-}
-
-/* for smaller screen sizes from 500px wide and down */
-@media screen and (max-width: 500px) {
-    .logo {
-        font-size: 400%;
-    }
-
-    .nav {
-        font-size: 100%;
-    }
-
-    .logo,
-    .navbar {
-        text-align: center;
-        float: none;
-        line-height: 80px;
-        margin: 20px;
-        padding: 10px;
-        clear: both;
-        letter-spacing: 0;
-    }
-
-    .image-item {
-        width: 100%;
-        padding-bottom: 10px;
-        margin: 0;
+    footer {
+        height: auto;
     }
 }
