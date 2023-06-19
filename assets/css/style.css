@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+/* PAGE BODY STRUCTURE */
+body {
+    font-family: Diphylleia, sans-serif;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    background-color: #FFFCEF;
+    color: #1b3f18;
+}
+
+/* LOGO AND NAVIGATION BAR */
+.logo {
+    font-family: Diphylleia, sans-serif;
+    font-size: 600%;
+
+    text-align: left;
+    float: left;
+    margin: 20px;
+
+    color: #1b3f18;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+.navbar {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    float: right;
+    text-align: left;
+    font-size: 120%;
+}
+
+.navbar,
+.logo {
+    line-height: 75px;
+    letter-spacing: 4px;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #1b3f18;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid;
+    background-color: #1b3f18;
+    color: #FFFCEF;
+}
+
+.active {
+    background-color: #1b3f18;
+    color: #FFFCEF;
+}
+
+/* TITLE AND PARAGRAPHS*/
+.title {
+    font-size: 170%;
+    letter-spacing: 4px;
+    line-height: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 40px;
+    clear: both;
+    color: #1b3f18;
+}
+
+.welcome-content {
+    padding: 15px;
+}
+
+/* HOME PAGE CIRCLE IMAGE */
+.circle {
+    width: 300px;
+    height: 300px;
+
+    padding: 10px;
+    margin: 0 auto;
+    clear: both;
+
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.circle-bg {
+    background: url('../images/main-image.png') no-repeat center center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* PALETTE ICON STYLE */
+.icon {
+    padding: 10px 0 85px 0;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: 400%;
+    color: #1b3f18;
+}
+
+.icon a:hover {
+    font-size: 500%;
+    color: #1b3f18;
+}
+
+/* FOOTER */
+footer {
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #1b3f18;
+}
+
+.contact {
+    text-transform: uppercase;
+    font-size: 120%;
+    float: left;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    float: right;
+    font-size: 150%;
+}
+
+.contact,
+.social-media {
+    text-decoration: none;
+    color: #FFFCEF;
+    padding: 20px;
+}
+
+/* CONTACT FORM */
+.form-section {
+    padding-bottom: 85px;
+}
+
+.contact-form {
+    margin: auto;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 20px;
+    color: #1b3f18;
+}
+
+.label {
+    float: left;
+}
+
+.text-input {
+    height: 25px;
+}
+
+.text-input,
+#textarea {
+    width: 100%;
+    margin: 5px 0 20px 0;
+    background: #1b3f18;
+    color: #FFFCEF;
+    border: 1px solid #FFFCEF;
+    border-radius: 15px;
+}
+
+.text-input:hover,
+#textarea:hover {
+    border-color: #1b3f18;
+}
+
+.submit-button {
+    margin: auto;
+    padding: 15px 32px 15px 32px;
+
+    border: 1px solid #FFFCEF;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    display: block;
+
+    background-color: #1b3f18;
+    color: #FFFCEF;
+}
+
+.submit-button:hover {
+    background-color: #1b3f18;
+    color: #FFFCEF;
+}
+
+/* FLEXBOX GALLERY */
+.flexbox {
+    width: 66%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 15px;
+}
+
+/* MEDIA QUERIES */
+/* for larger screen sizes from 1400px wide and down */
+@media screen and (max-width: 1400px) {
+    .flexbox {
+        width: 80%;
+    }
+
+    .flex-gallery {
+        padding: 5px;
+    }
+
+    .image-item {
+        padding: 5px;
+    }
+}
+
+/* for large to medium screen sizes from 1110px wide and down */
+@media screen and (max-width: 1110px) {
+    .flexbox {
+        width: 100%;
+
+    }
+
+    .flex-gallery {
+        padding: 5px;
+    }
+
+    .image-item {
+        padding: 5px;
+    }
+}
+
+/* for medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    .logo {
+        font-size: 500%;
+    }
+
+    .logo,
+    .navbar {
+        text-align: center;
+        float: none;
+        line-height: 80px;
+        clear: both;
+    }
+}
+
+/* for smaller screen sizes from 500px wide and down */
+@media screen and (max-width: 500px) {
+    .logo {
+        font-size: 400%;
+    }
+
+    .nav {
+        font-size: 100%;
+    }
+
+    .logo,
+    .navbar {
+        text-align: center;
+        float: none;
+        line-height: 80px;
+        margin: 20px;
+        padding: 10px;
+        clear: both;
+        letter-spacing: 0;
+    }
+
+    .image-item {
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+}
