@@ -12,15 +12,19 @@ body {
 }
 
 /* LOGO AND NAVIGATION BAR */
-.logo {
-    font-family: Diphylleia, sans-serif;
-    font-size: 400%;
-
+.header-container {
     text-align: left;
-    float: left;
-    margin: 20px;
+}
 
+.logo {
+    font-size: 400%;
+    letter-spacing: 4px;
+    line-height: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 40px 0;
     color: #1b3f18;
+    text-align: left;
 }
 
 ul {
@@ -34,19 +38,15 @@ li {
 }
 
 .navbar {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     clear: both;
     float: right;
-    text-align: left;
-    font-size: 120%;
-}
-
-.navbar,
-.logo {
-    line-height: 75px;
-    letter-spacing: 4px;
-    margin: 20px;
+    text-align: right;
+    font-size: 150%;
+    line-height: inherit;
+    letter-spacing: 2px;
+    margin: 10px;
 }
 
 a {
@@ -68,43 +68,34 @@ a {
 
 /* TITLE AND PARAGRAPHS*/
 .title {
-    font-size: 170%;
+    font-size: 150%;
     letter-spacing: 4px;
     line-height: 20px;
     font-weight: bolder;
     text-transform: uppercase;
+    text-align: center;
     margin: 40px;
     clear: both;
     color: #1b3f18;
 }
 
 .welcome-content {
-    padding: 15px;
-}
-
-/* HOME PAGE CIRCLE IMAGE */
-.circle {
-    width: 300px;
-    height: 300px;
-
     padding: 10px;
-    margin: 0 auto;
+}
+
+/* homepage image */
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    margin: auto;
     clear: both;
-
-    border-style: solid;
-    border-color: #CCC;
-    border-width: 1px;
-    border-radius: 50%;
 }
 
-.circle-bg {
-    background: url('../images/main-image.png') no-repeat center center;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-/* PALETTE ICON STYLE */
+/* heart icon style */
 .icon {
     padding: 10px 0 85px 0;
 }
@@ -308,20 +299,4 @@ footer {
 
 #photos>img {
     width: 100%;
-}
-.flexbox {
-    width: 66%;
-    margin: auto;
-    padding-bottom: 70px;
-}
-
-.flex-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: center;
-}
-
-.image-item {
-    margin: 15px;
 }
