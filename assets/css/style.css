@@ -14,7 +14,7 @@ body {
 /* LOGO AND NAVIGATION BAR */
 .logo {
     font-family: Diphylleia, sans-serif;
-    font-size: 600%;
+    font-size: 400%;
 
     text-align: left;
     float: left;
@@ -36,7 +36,7 @@ li {
 .navbar {
     text-transform: uppercase;
     text-decoration: none;
-
+    clear: both;
     float: right;
     text-align: left;
     font-size: 120%;
@@ -296,4 +296,32 @@ footer {
         padding-bottom: 10px;
         margin: 0;
     }
+}
+
+#photos {
+    float: inherit;
+    clear: both;
+    line-height: inherit;
+    column-count: 4;
+    column-gap: inherit;
+}
+
+#photos>img {
+    width: 100%;
+}
+.flexbox {
+    width: 66%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 15px;
 }
