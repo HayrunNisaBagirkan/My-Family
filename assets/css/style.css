@@ -7,13 +7,17 @@ body {
     line-height: 20px;
     letter-spacing: 2px;
 
-    background-color: #FFFCEF;
+    background-color: #fdf5cf;
     color: #1b3f18;
 }
 
 /* LOGO AND NAVIGATION BAR */
-.header-container {
-    text-align: left;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -22,31 +26,28 @@ body {
     line-height: 20px;
     font-weight: bolder;
     text-transform: capitalize;
-    margin: 40px 0;
+    margin: 0;
     color: #1b3f18;
     text-align: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
 }
 
 .navbar {
     text-transform: capitalize;
     text-decoration: none;
-    clear: both;
-    float: right;
-    text-align: right;
     font-size: 150%;
     line-height: inherit;
     letter-spacing: 2px;
     margin: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
 }
 
 a {
@@ -58,12 +59,12 @@ a {
 .navbar a:hover {
     border-bottom: 1px solid;
     background-color: #1b3f18;
-    color: #FFFCEF;
+    color: #fdf5cf;
 }
 
 .active {
     background-color: #1b3f18;
-    color: #FFFCEF;
+    color: #fdf5cf;
 }
 
 /* TITLE AND PARAGRAPHS*/
@@ -89,8 +90,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
     margin: auto;
     clear: both;
 }
@@ -113,105 +114,83 @@ a {
 
 /* FOOTER */
 footer {
-    height: 60px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background-color: #1b3f18;
-}
-
-.contact {
-    text-transform: uppercase;
-    font-size: 120%;
-    float: left;
-    letter-spacing: 4px;
+    height: 150px;
 }
 
 .social-media {
-    float: right;
-    font-size: 150%;
+    text-align: center;
 }
 
-.contact,
-.social-media {
-    text-decoration: none;
-    color: #FFFCEF;
-    padding: 20px;
+.social-media>li {
+    display: inline;
 }
 
-/* CONTACT FORM */
-.form-section {
-    padding-bottom: 85px;
-}
-
-.contact-form {
-    margin: auto;
-    padding: 30px;
-    max-width: 400px;
-    border-radius: 20px;
+.social-media i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
     color: #1b3f18;
 }
 
-.label {
-    float: left;
+/* gallery */
+
+#photos {
+    float: inherit;
+    clear: both;
+    line-height: inherit;
+    column-count: 4;
+    column-gap: inherit;
 }
 
-.text-input {
-    height: 25px;
-}
-
-.text-input,
-#textarea {
+#photos>img {
     width: 100%;
-    margin: 5px 0 20px 0;
-    background: #1b3f18;
-    color: #FFFCEF;
-    border: 1px solid #FFFCEF;
-    border-radius: 15px;
 }
 
-.text-input:hover,
-#textarea:hover {
+
+/* contact form */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #fdf5cf;
+    border-radius: 20px 40px 5px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 40px 5px;
+    border: 1px solid #fdf5cf;
+    border-style: inset;
     border-color: #1b3f18;
 }
 
-.submit-button {
-    margin: auto;
-    padding: 15px 32px 15px 32px;
-
-    border: 1px solid #FFFCEF;
-    border-radius: 15px;
+button {
     width: 100%;
-    text-align: center;
-    font-size: 100%;
-    display: block;
-
+    padding: 10px;
     background-color: #1b3f18;
-    color: #FFFCEF;
+    color: #fdf5cf;
+    border: none;
+    border-radius: 20px 40px 5px;
+    cursor: pointer;
 }
 
-.submit-button:hover {
+button:hover {
     background-color: #1b3f18;
-    color: #FFFCEF;
-}
-
-/* FLEXBOX GALLERY */
-.flexbox {
-    width: 66%;
-    margin: auto;
-    padding-bottom: 70px;
-}
-
-.flex-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: center;
-}
-
-.image-item {
-    margin: 15px;
 }
 
 /* MEDIA QUERIES */
@@ -287,16 +266,4 @@ footer {
         padding-bottom: 10px;
         margin: 0;
     }
-}
-
-#photos {
-    float: inherit;
-    clear: both;
-    line-height: inherit;
-    column-count: 4;
-    column-gap: inherit;
-}
-
-#photos>img {
-    width: 100%;
 }
