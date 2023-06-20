@@ -54,15 +54,11 @@ a {
     text-decoration: none;
     padding: 10px;
     color: #1b3f18;
+
 }
 
 .navbar a:hover {
     border-bottom: 1px solid;
-    background-color: #1b3f18;
-    color: #fdf5cf;
-}
-
-.active {
     background-color: #1b3f18;
     color: #fdf5cf;
 }
@@ -94,22 +90,7 @@ a {
     width: 400px;
     margin: auto;
     clear: both;
-}
-
-/* heart icon style */
-.icon {
-    padding: 10px 0 85px 0;
-}
-
-.icon a {
-    text-decoration: none;
-    font-size: 400%;
-    color: #1b3f18;
-}
-
-.icon a:hover {
-    font-size: 500%;
-    color: #1b3f18;
+    border-radius: 20px 40px 5px;
 }
 
 /* FOOTER */
@@ -244,11 +225,14 @@ button:hover {
     #photos {
         column-count: 3;
     }
-}
 
-/* for larger screen sizes from 800px wide and down */
-@media screen and (max-width: 800px) {
-    #photos {
-        column-count: 2;
+    .center-image {
+        max-width: 100%;
     }
-}
+
+    /* for larger screen sizes from 800px wide and down */
+    @media screen and (max-width: 800px) {
+        #photos {
+            column-count: 2;
+        }
+    }
