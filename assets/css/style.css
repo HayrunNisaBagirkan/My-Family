@@ -238,3 +238,17 @@ button:hover {
         height: auto;
     }
 }
+
+/* for larger screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    #photos {
+        column-count: 3;
+    }
+}
+
+/* for larger screen sizes from 800px wide and down */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
